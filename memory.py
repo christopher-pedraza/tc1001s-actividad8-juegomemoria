@@ -11,11 +11,20 @@ Exercises:
 
 from random import *
 from turtle import *
+import string
 
 from freegames import path
 
 car = path('car.gif')
-tiles = list(range(32)) * 2
+
+letras_minus = string.ascii_lowercase
+alfabeto_minus = list(letras_minus)
+letras_mayus = string.ascii_uppercase
+alfabeto_mayus = list(letras_mayus)
+
+letras = alfabeto_minus + alfabeto_mayus[0:6]
+tiles = letras * 2
+
 state = {'mark': None}
 hide = [True] * 64
 
