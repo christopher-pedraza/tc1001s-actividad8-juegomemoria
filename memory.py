@@ -65,10 +65,17 @@ def tap(x, y):
 
     if mark is None or mark == spot or tiles[mark] != tiles[spot]:
         state['mark'] = spot
+        print(state['mark'])
     else:
         hide[spot] = False
         hide[mark] = False
         state['mark'] = None
+
+        for i in range(64):
+            if hide[i] != False:
+                return
+        
+        print("Victoria!")
 
 #Dibujo del carro y el font de los numeros
 def draw():
