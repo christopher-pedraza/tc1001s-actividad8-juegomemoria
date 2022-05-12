@@ -1,5 +1,5 @@
 """
-Actividad 6: Juego del Packman
+Actividad 8: Juego de Memoria 
 
 Equipo 9:
 Christopher Gabriel Pedraza Pohlenz A01177767
