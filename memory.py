@@ -79,6 +79,7 @@ def tap(x, y):
     # Si no se encuentra el par
     if mark is None or mark == spot or tiles[mark] != tiles[spot]:
         state['mark'] = spot
+     
     # Si se encuentra el par
     else:
         # Se revela la imagen
