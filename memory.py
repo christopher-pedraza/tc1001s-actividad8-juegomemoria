@@ -65,7 +65,6 @@ def tap(x, y):
 
     if mark is None or mark == spot or tiles[mark] != tiles[spot]:
         state['mark'] = spot
-        print(state['mark'])
     else:
         hide[spot] = False
         hide[mark] = False
